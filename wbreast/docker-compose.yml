@@ -1,0 +1,9 @@
+rstudio:
+    image: rocker/rstudio
+    ports:
+        - "8787:8787"
+    volumes:
+        - /Users/arris/Code/github.com/arrisray/ml:/code
+python:
+    image: python:slim
+    command: tail -f /dev/null
